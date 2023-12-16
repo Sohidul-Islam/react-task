@@ -70,20 +70,11 @@ const Problem2 = () => {
     return data;
   };
 
-  console.log({
-    query: queryAll?.data?.data?.results,
-    queryUs: queryUs?.data?.data?.results,
-  });
+
 
   const handleScroll = () => {
     const container = containerRef.current;
-    console.log("call", {
-      height: {
-        containerSr: container.scrollHeight,
-        top: container.scrollTop,
-        clh: container.clientHeight,
-      },
-    });
+
     if (
       container.scrollHeight - container.scrollTop ===
       container.clientHeight
@@ -334,7 +325,7 @@ const Problem2 = () => {
                 <p>
                   <strong>Phone: </strong>
                   {contact?.phone}
-                  
+
                 </p>
               </div>
             </div>
