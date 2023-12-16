@@ -22,11 +22,14 @@ const Problem2 = () => {
 
   const showModal = (modalType) => {
     setModal(modalType);
+    setCurrentPage(1)
     if (modalType === "Modal C") {
       setShowC(true);
       setShow(false);
+
       return;
     }
+   
     setShow(true);
   };
 
