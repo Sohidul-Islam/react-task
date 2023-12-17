@@ -59,6 +59,10 @@ const sortedData = data.sort((a, b) => {
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
+    if(!user?.name || !user?.status){
+      window.alert("Name and status feild shouldn't empty")
+      return;
+    }
     setResult((prev)=>[...prev,user])
     setUser(initial)
   };
